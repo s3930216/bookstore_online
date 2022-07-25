@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="logo of bookstore" class="left">
+        </div>
+        <div class="header_name">
+            <h1>Bookaholic</h1> 
+        </div>
+        <div class="navbar">
+            <ul>
+                
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Book_detail_page.html">Book Detail Page</a></li>
+                <li><a href="Category.html">Category Page</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form onsubmit="return false;" method="post" action="exercise1.html" enctype="multipart/form-data">
+            <!--
+              <div> is used to group related elements together
+            -->
+            <div class="form-row">
+              <div class="form-label">
+                <!--
+                  to link a label to an input field,
+                  assign the same value to the label's "for" attribute and the input's "id" attribute
+                -->
+                <label for="purpose">Purpose of contact</label>
+              </div>
+              <div class="form-field">
+                
+                <select id="" name="purpose">
+                  <option value="sell Books">I want to sell books</option>
+                  <option value="buy books">I want to buy books</option>
+                </select>
+              </div>
+            </div>
+      
+            <div class="form-row">
+              <div class="form-label">
+                <label for="fname">First name</label>
+              </div>
+              <div class="form-field">
+                <input required id="fname" type="text" name="fname" maxlength="50">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">
+                  <label for="lname">Last name</label>
+                </div>
+                <div class="form-field">
+                  <input required id="lname" type="text" name="lname" maxlength="50">
+                </div>
+              </div>
+      
+            <div class="form-row">
+              <div class="form-label">
+                <label for="email">Your email</label>
+              </div>
+              <div class="form-field">
+                <input required id="email" type="email" name="email">
+              </div>
+            </div>
+      
+            <div class="form-row">
+              <div class="form-label">
+                <label for="phone">Your phone</label>
+              </div>
+              <div class="form-field">
+                <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+              </div>
+            </div>
+      
+            <div class="form-row">
+              <div class="form-label">
+                <label>How we contact you</label>
+              </div>
+              <div class="form-field">
+                <ul>
+                  <li>
+                    <input type="radio" id="contact_email" name="contact_method" value="email">
+                    <label for="contact_email">Email</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                    <label for="contact_phone">Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">
+                  <label>Do you want to receive our weekly newsletter:</label>
+                </div>
+                <div class="form-field">
+                  <ul>
+                    <li>
+                      <input type="radio" id="yes" name="newsletter" value="Yes" checked>
+                      <label for="contact_email">Yes</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="No" name="newsletter" value="No">
+                      <label for="contact_phone">No</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+      
+      
+            <div class="form-row">
+              <div class="form-label">
+                <label for="message">Note</label>
+              </div>
+              <div class="form-field">
+                <textarea cols="40" rows="10" required id="message" name="message"></textarea>
+              </div>
+            </div>
+      
+            
+      
+            <div class="form-row">
+              <input type="reset" value="   reset   ">
+              <input type="submit" value="   submit   ">
+            </div>
+          </form>
+    </main>
+    <footer>
+        <div class="footer-layout">
+            <ul>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="Contact.html">Privacy & Policy</a></li>
+                <li><a href="Contact.html">Term & Condition</a></li>
+                <li><a href="Contact.html">Copyright</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Book_detail_page.html">Book Detail Page</a></li>
+                <li><a href="Category.html">Category Page</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
